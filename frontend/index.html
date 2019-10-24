@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DMI Web App</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+
+<body>
+    <header>
+        <h1>Denver Music Instruction</h1>  
+    </header>
+        <div id="navbar"> 
+            <div id="sidenav">
+                <a id="home" href="index.html">Home</a>
+                    <button id="sidebtn" onclick="openInstrNav(), closeSSNav()">Instruments</button>
+                        <div id="instrument-content">
+                            <a href="#" class="instrument">Voice</a>
+                            <a href="#" class="instrument">Guitar</a>
+                            <a href="#" class="instrument">Piano</a>
+                            <a href="#" class="instrument">Violin</a>
+                            <a href="#" class="instrument">Viola</a>
+                            <a href="#" class="instrument">Cello</a>
+                            <a href="#" class="instrument">Bass</a>
+                            <a href="#" class="instrument">Percussion</a>
+
+                    </div>
+                    <button id="sidebtn" onclick="openSSNav(), closeInstrNav()">Schools & Seminars</button>
+                        <div id="ss-content">
+                            <a href="#" class="instrument">Music Schools</a>
+                            <a href="#" class="instrument">Classes</a>
+                            <a href="#" class="instrument">Seminars</a>
+                </div>
+            </div>
+        </div>
+    <div id='card-container'></div>
+    <script src='app.js'></script>
+
+</body>
+
+</html>

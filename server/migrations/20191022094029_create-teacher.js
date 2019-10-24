@@ -10,7 +10,7 @@ exports.up = function(knex) {
       table.text('email')
       table.text("phone_number")
   })
-};
+}
 
 exports.down = function(knex) {
   return knex.schema.dropTable('teacher')

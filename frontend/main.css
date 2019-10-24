@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Teko:300&display=swap');
+
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+
+body {
+    background: url("https://images.unsplash.com/photo-1527606432722-8b1422ce77a1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80") no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 100%;
+    font-family: 'Playfair Display', serif;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(10, 9, 9, 0.315);
+    padding: 2rem;
+    border-bottom: solid;
+    border-color: rgba(10, 9, 9, 0.3);
+    
+}
+
+header > h1 {
+    color: rgba(176, 187, 197, 0.658);
+    font-size: 40px;
+    font-family: 'Teko', serif;
+}
+
+#navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  height: 100%; 
+  width: 15%; 
+  position: fixed; 
+  z-index: 1; 
+  top: 0; 
+  left: 0;
+  background-color:rgba(0,0,0,0.2); 
+  overflow-x: hidden; 
+  border-right: solid;
+  border-color: rgba(10, 9, 9, 0.3);
+}
+
+#instrument-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15%;
+    height: 100%; 
+    width: 0; 
+    position: fixed; 
+    z-index: 1; 
+    top: 0;
+    left: 0;
+    background-color:rgba(0, 0, 0, 0.5); 
+    overflow-x: hidden; 
+    transition: 0.5s; 
+}
+
+#ss-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15%;
+    height: 100%; 
+    width: 0; 
+    position: fixed; 
+    z-index: 1; 
+    top: 0;
+    left: 0;
+    background-color:rgba(0, 0, 0, 0.5); 
+    overflow-x: hidden; 
+    transition: 0.5s; 
+}
+
+#instrument-content > a {
+        display: flex;
+        justify-content: center;
+        text-decoration: none;
+        font-size: 16px;
+        border: none;
+        outline: none;
+        color: rgba(176, 187, 197, 0.658);
+        padding: 14px 16px;
+        background-color: rgba(0, 0, 0, 0.301);
+        font-family: inherit; 
+        margin: 0;  
+        width: 100%; 
+}
+
+#ss-content > a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: rgba(176, 187, 197, 0.658);
+    padding: 14px 16px;
+    background-color: rgba(0,0,0,0.301);
+    font-family: inherit; 
+    margin: 0;  
+    width: 100%; 
+}
+
+
+#home:hover {
+    background-color: rgba(128, 133, 138, 0.432);
+}
+
+#sidenav #sidebtn:hover {
+    background-color: rgba(128, 133, 138, 0.432);
+}
+
+#sidenav {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width: 100%;
+    
+}
+
+#home {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: rgba(176, 187, 197, 0.658);
+    padding: 14px 16px;
+    background-color: rgba(0,0,0,0.2);
+    font-family: inherit; 
+    margin: 0;   
+}
+
+#sidenav #sidebtn {
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: rgba(176, 187, 197, 0.658);
+    padding: 14px 16px;
+    background-color: rgba(0,0,0,0.2);
+    font-family: inherit; 
+    margin: 0; 
+   
+}
+
+#sidenav #sidebtn:hover {
+    background-color: rgba(128, 133, 138, 0.432);
+}
+
+#card-container {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap; 
+    margin-left: 30%;
+    
+}
+
+.teacherCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid grey;
+    background-color:rgba(0, 0, 0, 0.7);
+    text-decoration: none;
+    margin: 10px;
+    width: 300px;
+    height: auto;
+    padding: 10px;
+    border-radius: 30px;
+    box-shadow: 3px 3px rgba(116, 113, 113, 0.9);
+    font-size: 20px;
+    color: rgba(190, 199, 207, 0.658);
+    font-family: 'Playfair Display', serif;
+}
+
+.teacherCard > a {
+    text-decoration: none;
+    color: rgba(185, 190, 196, 0.932);
+}
