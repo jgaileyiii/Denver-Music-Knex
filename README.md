@@ -23,7 +23,7 @@ npm install nodemon
 ```
 In the back end run npm run dev to start your local server. (Make sure your ports match). 
 ```javascript
-(Opt: PORT=####) rails s
+npm run dev
 ```
 In the front end install lite-server:
 ```javascript
