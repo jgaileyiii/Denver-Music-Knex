@@ -11,13 +11,14 @@
 
 <body>
     <header>
-        <h1>Denver Music Instruction</h1>  
+        <h1>Denver Music KNEX</h1>  
     </header>
         <div id="navbar"> 
             <div id="sidenav">
                 <a id="home" href="index.html">Home</a>
                     <button id="sidebtn" onclick="openInstrNav(), closeSSNav()">Instruments</button>
                         <div id="instrument-content">
+                            <p>Find Teachers:</p>
                             <a href="#" class="instrument">Voice</a>
                             <a href="#" class="instrument">Guitar</a>
                             <a href="#" class="instrument">Piano</a>
@@ -27,14 +28,15 @@
                             <a href="#" class="instrument">Bass</a>
                             <a href="#" class="instrument">Percussion</a>
 
-                    </div>
+                        </div>
                     <button id="sidebtn" onclick="openSSNav(), closeInstrNav()">Schools & Seminars</button>
                         <div id="ss-content">
                             <a href="#" class="instrument">Music Schools</a>
                             <a href="#" class="instrument">Classes</a>
                             <a href="#" class="instrument">Seminars</a>
+                        </div>
+                    <button id="sidebtn" class="createTeacher" onclick="closeSSNav(), closeInstrNav(), addTeacher()">Add Teacher</button>
                 </div>
-            </div>
         </div>
     <div id='card-container'></div>
     <script src='app.js'></script>

@@ -98,7 +98,7 @@ input, select {
 
 
 body {
-    background: url("https://images.unsplash.com/photo-1527606432722-8b1422ce77a1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80") no-repeat center center fixed;
+    background: url("andrey-konstantinov-drir5tDCWF4-unsplash.png") no-repeat center center fixed;
     background-size: cover;
     position: relative;
     width: 100%;
@@ -190,6 +190,25 @@ header > h1 {
         width: 100%; 
 }
 
+#instrument-content > p {
+        display: flex;
+        justify-content: center;
+        text-decoration: none;
+        font-size: 16px;
+        border: none;
+        outline: none;
+        color: rgba(176, 187, 197, 0.658);
+        padding: 14px 16px;
+        background-color: rgba(0, 0, 0, 0.301);
+        font-family: inherit; 
+        margin: 0;  
+        width: 100%; 
+}
+
+#instrument-content > a:hover {
+    background-color: rgba(128, 133, 138, 0.432)
+}
+
 #ss-content > a {
     display: flex;
     justify-content: center;
@@ -203,6 +222,10 @@ header > h1 {
     font-family: inherit; 
     margin: 0;  
     width: 100%; 
+}
+
+#ss-content > a:hover {
+    background-color: rgba(128, 133, 138, 0.432);
 }
 
 
@@ -266,15 +289,16 @@ header > h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
     border: 2px solid grey;
-    background-color:rgba(0, 0, 0, 0.7);
+    border-radius: 3px;
+    background-color:rgba(0, 0, 0, 0.9);
     text-decoration: none;
     margin: 10px;
     width: 300px;
     height: auto;
     padding: 10px;
-    border-radius: 30px;
-    box-shadow: 3px 3px rgba(116, 113, 113, 0.9);
+    box-shadow: 2px 2px rgba(116, 113, 113, 0.9);
     font-size: 20px;
     color: rgba(190, 199, 207, 0.658);
     font-family: 'Playfair Display', serif;
@@ -282,5 +306,45 @@ header > h1 {
 
 .teacherCard > a {
     text-decoration: none;
-    color: rgba(185, 190, 196, 0.932);
+    color: rgb(185, 190, 196);
+}
+
+.teacherCard h1 { 
+    font-style: bold;
+    font-size: 20px;
+}
+
+.teacherForm {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 300px;
+    margin-top: 15%;
+    margin-right: 25%;
+    font-family: 'Playfair Display', serif;
+    align-items: center;
+    border: 2px solid grey;
+    border-radius: 5px;
+    box-shadow: 3px 3px rgba(116, 113, 113, 0.5);
+    background-color: rgba(0, 0, 0, 0.8); 
+    color: white;
+}
+
+.teacherForm input {  
+        margin-top: 10px;
+        margin-bottom: 8px;
+}
+
+.teacherForm .submit {
+    font-family: 'Playfair Display', serif;
+    width: 100px;
+}
+
+#more {
+    display: none;
+}
+
+#myBtn {
+    font-family: 'Playfair Display', serif;
+    width: 100px;
 }
